@@ -163,3 +163,50 @@ footer {
     border-top: 1px solid #333;
     margin-top: 40px;
 }
+
+/* ==========================================
+   PENGATURAN RESPONSIF UNTUK HP / TABLET
+========================================== */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin: 0 8px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px 0;
+        gap: 25px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .hero-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+}
